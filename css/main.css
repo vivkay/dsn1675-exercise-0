@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+    font-size: 100%;
+}
+
+dt {
+    float: left;
+    clear: left; /* Force the <dt> underneath anything floated left */
+}
+
+dd {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+dl {
+    border: 1px solid red;
+    /*
+    Overflow hidden can be used as a clearfix
+    It reminds the <dl> to wrap around its floated children
+    */
+    overflow: hidden;
+}
+
